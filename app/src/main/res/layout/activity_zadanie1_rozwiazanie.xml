@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <!--TextView w kolorze niebieskim, wielkość 38sp, na środku-->
+    <TextView
+        android:id="@+id/naglowek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jestem nagłówkiem"
+        android:padding="14dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="38sp" />
+
+    <!--TextView w kolorze czerwonym, wielkość 24sp, od lewej-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:padding="10dp"
+        android:text="Jestem mniejszym nagłówkiem"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
+    <!--TextView w kolorze zielonym, wielkość 12sp, od prawej-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jestem malutkim nagłówkiem"
+        android:layout_gravity="end"
+        android:padding="6dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="12sp" />
+
+    <!--EditText w kolorze czarnym, wielkość 20sp-->
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:hint="To jest EditText" />
+
+    <!--ImageView: wysokość 200dp, szerokość match_parent-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/ic_launcher_background"/>
+
+    <!--Button: na środku, tło niebieskie, text pomarańczowy, rozmiar textu 22sp-->
+    <Button
+        android:id="@+id/button"
+        android:onClick="pobierzText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:text="Klikaj mnie"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:layout_margin="12dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_light" />
+
+</LinearLayout>
