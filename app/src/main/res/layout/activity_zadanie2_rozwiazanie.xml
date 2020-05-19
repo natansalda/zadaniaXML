@@ -106,4 +106,13 @@
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="14sp" />
 
+    <ImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="30dp"
+        android:layout_margin="8dp"
+        android:src="@android:drawable/presence_audio_online"
+        android:background="@android:color/holo_blue_dark" />
+
 </LinearLayout>
