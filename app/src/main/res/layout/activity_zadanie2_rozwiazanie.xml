@@ -115,4 +115,10 @@
         android:src="@android:drawable/presence_audio_online"
         android:background="@android:color/holo_blue_dark" />
 
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch" />
+
 </LinearLayout>
