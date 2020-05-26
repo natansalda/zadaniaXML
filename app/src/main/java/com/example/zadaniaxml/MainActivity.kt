@@ -20,32 +20,30 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun makeRed(view: View) {
-        header_text.setTextColor(Color.RED)
+
     }
 
     fun makeGreen(view: View) {
-        header_text.setTextColor(Color.GREEN)
+
     }
 
     fun makeYellow(view: View) {
-        header_text.setTextColor(Color.YELLOW)
+
     }
 
     fun makeGray(view: View) {
-        header_text.setTextColor(Color.GRAY)
+
     }
 
     fun makeWhite(view: View) {
-        header_text.setTextColor(Color.WHITE)
+
     }
 
     fun makeCyan(view: View) {
-        header_text.setTextColor(Color.CYAN)
+
     }
 
     fun makeBlack(view: View) {
-        header_text.setTextColor(Color.BLACK)
+
     }
-
-
 }
