@@ -16,45 +16,43 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_zadanie4_rozwiazanie)
     }
 
-    // changes color to blue
     fun makeBlue(view: View) {
         header_text.setTextColor(Color.BLUE)
+        header_text.text = "I am blue"
     }
 
-    // changes color to red
     fun makeRed(view: View) {
         header_text.setTextColor(Color.RED)
+        header_text.text = "I am red"
     }
 
-    // changes color to green
     fun makeGreen(view: View) {
         header_text.setTextColor(Color.GREEN)
+        header_text.text = "I am green"
     }
 
-    // changes color to yellow
     fun makeYellow(view: View) {
         header_text.setTextColor(Color.YELLOW)
+        header_text.text = "I am yellow"
     }
 
-    // changes color to gray
     fun makeGray(view: View) {
         header_text.setTextColor(Color.GRAY)
+        header_text.text = "I am gray"
     }
 
-    // changes color to white
     fun makeWhite(view: View) {
         header_text.setTextColor(Color.WHITE)
+        header_text.text = "I am white"
     }
 
-    // changes color to cyan
     fun makeCyan(view: View) {
         header_text.setTextColor(Color.CYAN)
+        header_text.text = "I am cyan"
     }
 
-    // changes color to black
     fun makeBlack(view: View) {
         header_text.setTextColor(Color.BLACK)
+        header_text.text = "I am black"
     }
-
-
 }
