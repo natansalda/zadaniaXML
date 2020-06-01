@@ -1,11 +1,9 @@
 package com.example.zadaniaxml
 
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_zadanie1_rozwiazanie.*
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_zadanie4_rozwiazanie.*
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +44,4 @@ class MainActivity : AppCompatActivity() {
     fun makeBlack(view: View) {
         header_text.setTextColor(Color.BLACK)
     }
-
-
 }
