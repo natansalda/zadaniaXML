@@ -1,47 +1,35 @@
 package com.example.zadaniaxml
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_zadanie4_rozwiazanie.*
+import kotlinx.android.synthetic.main.activity_zadanie5_rozwiazanie.*
 
 class MainActivity : AppCompatActivity() {
 
+    var scoreTeamA: Int = 0
+
+    var scoreTeamB: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_zadanie4_rozwiazanie)
+        setContentView(R.layout.activity_zadanie5_rozwiazanie)
     }
 
-    fun makeBlue(view: View) {
-        header_text.setTextColor(Color.BLUE)
+    fun teamAScores(view: View) {
+        scoreTeamA++
+        teamA_text_view.text = scoreTeamA.toString()
     }
 
-    fun makeRed(view: View) {
-        header_text.setTextColor(Color.RED)
+    fun teamBScores(view: View) {
+        scoreTeamB++
+        teamB_text_view.text = scoreTeamB.toString()
     }
 
-    fun makeGreen(view: View) {
-        header_text.setTextColor(Color.GREEN)
-    }
-
-    fun makeYellow(view: View) {
-        header_text.setTextColor(Color.YELLOW)
-    }
-
-    fun makeGray(view: View) {
-        header_text.setTextColor(Color.GRAY)
-    }
-
-    fun makeWhite(view: View) {
-        header_text.setTextColor(Color.WHITE)
-    }
-
-    fun makeCyan(view: View) {
-        header_text.setTextColor(Color.CYAN)
-    }
-
-    fun makeBlack(view: View) {
-        header_text.setTextColor(Color.BLACK)
+    fun resetScore(view: View) {
+        scoreTeamA = 0
+        scoreTeamB = 0
+        teamA_text_view.text = scoreTeamA.toString()
+        teamB_text_view.text = scoreTeamB.toString()
     }
 }
