@@ -7,29 +7,30 @@ import kotlinx.android.synthetic.main.activity_zadanie5_rozwiazanie.*
 
 class MainActivity : AppCompatActivity() {
 
-    var scoreTeamA: Int = 0
+    // create scoreTeamA variable, it needs to be Int, and value of 0
+    // create scoreTeamB variable, it needs to be Int, and value of 0
 
-    var scoreTeamB: Int = 0
-
+    // change used layout to activity_zadanie5_rozwiazanie
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_zadanie5_rozwiazanie)
+        setContentView(R.layout.activity_main)
     }
 
+
     fun teamAScores(view: View) {
-        scoreTeamA++
-        teamA_text_view.text = scoreTeamA.toString()
+        // add 1 to scoreTeamA with every click
+        // show proper score value in teamA_text_view
     }
 
     fun teamBScores(view: View) {
-        scoreTeamB++
-        teamB_text_view.text = scoreTeamB.toString()
+        // add 1 to scoreTeamB with every click
+        // show proper score value in teamB_text_view
     }
 
     fun resetScore(view: View) {
-        scoreTeamA = 0
-        scoreTeamB = 0
-        teamA_text_view.text = scoreTeamA.toString()
-        teamB_text_view.text = scoreTeamB.toString()
+        // scoreTeamA needs to be 0 again
+        // scoreTeamB needs to be 0 again
+        // show proper score value in teamA_text_view
+        // show proper score value in teamB_text_view
     }
 }
